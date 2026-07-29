@@ -1,8 +1,8 @@
-package com.example.bus_reservation_system.Service;
+package com.example.bus_reservation_system.service;
 
-import com.example.bus_reservation_system.Model.Bus;
-import com.example.bus_reservation_system.ExceptionHandling.BusNotFoundException;
-import com.example.bus_reservation_system.Repository.BusRepository;
+import com.example.bus_reservation_system.model.Bus;
+import com.example.bus_reservation_system.exceptionHandling.BusNotFoundException;
+import com.example.bus_reservation_system.repository.BusRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -28,12 +28,12 @@ public class BusService {
 
     // Get bus details from the database by id
     public Bus getBusById(Long id) {
-        return busRepository.findById(id).orElseThrow(() -> new BusNotFoundException("Bus not Found ,Try Another Id"));
+        return busRepository.findById(id).orElseThrow(() -> new BusNotFoundException("Bus not found for id :"+id));
     }
 
     //Get bus details from database by bus no
     public Bus getBusByBusNo(int busNo) {
-        return busRepository.findByBusNo(busNo).orElseThrow(() -> new BusNotFoundException(busNo + " not exists"));
+        return busRepository.findByBusNo(busNo).orElseThrow(() -> new BusNotFoundException(busNo + " bus is not exists"));
     }
 
     // Get buses details from database if it is ac

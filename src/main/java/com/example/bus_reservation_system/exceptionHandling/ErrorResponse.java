@@ -1,4 +1,4 @@
-package com.example.bus_reservation_system.ExceptionHandling;
+package com.example.bus_reservation_system.exceptionHandling;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

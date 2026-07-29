@@ -1,4 +1,4 @@
-package com.example.bus_reservation_system.ExceptionHandling;
+package com.example.bus_reservation_system.exceptionHandling;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.example.bus_reservation_system.ExceptionHandling;
+package com.example.bus_reservation_system.exceptionHandling;
 
 public class InvalidDeleteCritiriaException extends RuntimeException{
     public InvalidDeleteCritiriaException(String message){

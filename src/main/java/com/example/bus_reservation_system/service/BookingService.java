@@ -1,17 +1,16 @@
-package com.example.bus_reservation_system.Service;
+package com.example.bus_reservation_system.service;
 
-import com.example.bus_reservation_system.ExceptionHandling.BookingNotFoundException;
-import com.example.bus_reservation_system.ExceptionHandling.BusNotFoundException;
-import com.example.bus_reservation_system.ExceptionHandling.InvalidDeleteCritiriaException;
-import com.example.bus_reservation_system.ExceptionHandling.SeatAlreadyExistsException;
-import com.example.bus_reservation_system.Model.Booking;
-import com.example.bus_reservation_system.Model.Bus;
-import com.example.bus_reservation_system.Repository.BookingRepository;
-import com.example.bus_reservation_system.Repository.BusRepository;
+import com.example.bus_reservation_system.exceptionHandling.BookingNotFoundException;
+import com.example.bus_reservation_system.exceptionHandling.BusNotFoundException;
+import com.example.bus_reservation_system.exceptionHandling.InvalidDeleteCritiriaException;
+import com.example.bus_reservation_system.exceptionHandling.SeatAlreadyExistsException;
+import com.example.bus_reservation_system.model.Booking;
+import com.example.bus_reservation_system.model.Bus;
+import com.example.bus_reservation_system.repository.BookingRepository;
+import com.example.bus_reservation_system.repository.BusRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class BookingService {

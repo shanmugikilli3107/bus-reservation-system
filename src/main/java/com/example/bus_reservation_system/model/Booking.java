@@ -1,4 +1,4 @@
-package com.example.bus_reservation_system.Model;
+package com.example.bus_reservation_system.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;

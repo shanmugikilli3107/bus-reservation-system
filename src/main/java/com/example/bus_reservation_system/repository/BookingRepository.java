@@ -1,6 +1,6 @@
-package com.example.bus_reservation_system.Repository;
+package com.example.bus_reservation_system.repository;
 
-import com.example.bus_reservation_system.Model.Booking;
+import com.example.bus_reservation_system.model.Booking;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import java.util.List;
